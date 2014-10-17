@@ -1,0 +1,18 @@
+homepage:
+    pattern:   /
+    defaults:  { _controller: AcmeWelcomePageBundle:Default:index, name:imie, surname:nazwisko }
+wojtek_user_page:
+    resource: "@WojtekUserPageBundle/Resources/config/routing.php"
+    prefix:   /
+
+acme_welcome_page:
+    resource: "@AcmeWelcomePageBundle/Resources/config/routing.yml"
+    prefix:   /
+
+hello:
+     pattern:  /hello/{name}   
+     defaults: { _controller: AcmeWelcomePageBundle:Default:index }
+     
+hello2:
+     pattern:  /hello/{name}/{surname}     
+     defaults: { _controller: AcmeWelcomePageBundle:Default:index }
